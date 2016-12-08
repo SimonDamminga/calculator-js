@@ -1,0 +1,77 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(reken.jpg);
+}
+main{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#calculator{
+	position: absolute;
+	height: 900px;
+	width: 600px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.button{
+	display: table;
+	margin: 2px 2px 2px 2px;
+	text-align: center;
+	height: 130px;
+	width: 130px;
+	background-color: #002b70;
+}
+.button:hover{
+	cursor: pointer;
+}
+.middle{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	font-family: verdana;
+	font-weight: bold;
+	user-select: none;
+	font-size: 30px;
+}
+#awnser{
+	background-color: white;
+	display: table;
+	height: 30px;
+	width: 545px;
+	margin-bottom: 35px;
+	margin-top: 25px;
+	box-shadow: 2px 2px black;
+}
+#display{
+	display: table;
+	height: 50px;
+	width: 550px;
+	margin-bottom: 20px;
+	background-color: white;
+	box-shadow: 2px 2px black;
+	
+}
+.text{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 10px;
+}
+#equals{
+	margin-left: 135px;
+	background-color: white;
+}
+#text-equal{
+	color: black;
+}
+#plus{
+	margin-left: 270px;
+}
+#reset{
+	background-color: #960000;
+}
