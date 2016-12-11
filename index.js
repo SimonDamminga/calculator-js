@@ -1,22 +1,27 @@
-var numbers = [
-	document.getElementById('numberOne'),
-	document.getElementById('numberTwo'),
-	document.getElementById('numberThree'),
-	document.getElementById('numberFour'), 
-	document.getElementById('numberFive'), 
-	document.getElementById('numberSix'),
-	document.getElementById('numberSeven'),
-	document.getElementById('numberEight'),
-	document.getElementById('numberNine'),
-	document.getElementById('numberZero')
-]
-var caracters = [
-	document.getElementById('plus'),
-	document.getElementById('minus'),
-	document.getElementById('times'),
-	document.getElementById('devided'),
-	document.getElementById('equals'),
-	document.getElementById('point'),
-	document.getElementById('reset')
-]
-numbers[0].onclick = console.log('doei');
+
+window.onload = function(){
+var nee = "DAAG!"
+var awnser,
+	calculation,
+	limt,
+	oparator,
+
+	calculation = document.getElementById('display');
+	var keys = document.getElementsByClassName('button');
+
+	var len = keys.lenght;
+
+	for(var i = 0; i < len; i++){
+		keys[i].addEventListener("click", function() {
+			num = this.value;
+			output = calculation.innerHTML +=num;
+			limt = output.lenght;
+			if(limt > 16){
+				alert(nee);
+			}
+		}, false)
+	}
+}
+
+
+
