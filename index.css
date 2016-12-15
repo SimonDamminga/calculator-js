@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-image: url(reken.jpg);
+	background-image: url(trippy.jpg);
 }
 main{
 	height: 100%;
@@ -18,25 +18,21 @@ main{
 	flex-wrap: wrap;
 }
 .button{
+	border-radius: 4px;
 	display: table;
 	margin: 2px 2px 2px 2px;
 	text-align: center;
 	height: 130px;
 	width: 130px;
 	background-color: #002b70;
+	color: white;
+	font-family: verdana;
+	font-size: 30px;
+	font-weight: bold;
+	border: none;
 }
 .button:hover{
 	cursor: pointer;
-}
-.middle{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	color: white;
-	font-family: verdana;
-	font-weight: bold;
-	user-select: none;
-	font-size: 30px;
 }
 #awnser{
 	background-color: white;
@@ -57,16 +53,30 @@ main{
 	
 }
 .text{
+	font-family: verdana;
 	display: table-cell;
 	vertical-align: middle;
+	height: 50px;
+	width: 550px;
 	text-align: right;
 	padding-right: 10px;
+	font-size: 30px;
+}
+.textTwee{
+	height: 50px;
+	width: 400px;
+	text-align: right;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size: 30px;
+	padding-right: 10px;
+	font-family: verdana;
+	color: #8c0000;
+	font-weight: bold;
 }
 #equals{
 	margin-left: 135px;
 	background-color: white;
-}
-#text-equal{
 	color: black;
 }
 #plus{
