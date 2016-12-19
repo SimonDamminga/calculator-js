@@ -3,6 +3,7 @@ var count = 0;
 var box = document.getElementById('display-text');
 var ans = document.getElementById('answer-text');
 var num = "";
+var result = "";
 function input(x){
 	box.value += x;
 	if(x == 'c'){
@@ -10,6 +11,7 @@ function input(x){
 		ans.value = '';
 		sum = [];
 		count = 0;
+		ans.style.cssText = 'width: 400px;';
 	}else{
 		num += x;
 	}
@@ -38,17 +40,25 @@ function answer(){
 	var num1 = parseFloat(sum[0]);
 	var num2 = parseFloat(sum[2]);
 	if(sum[1] == '+'){
-		ans.value = num1+num2;
+		result = num1+num2;
 	}else if(sum[1] == '-'){
-		ans.value = num1-num2;
+		result = num1-num2;
 	}else if(sum[1] == '*'){
-		ans.value = num1*num2;
+		result = num1*num2;
 	}else if(sum[1] == '/'){
-		ans.value = num1/num2;
+		result = num1/num2;
+	}if (result == 0.30000000000000004){
+		result = result.toFixed(1);
+	}else if (result == 9){
+		result = "nein";
+	}else if (result == 42){
+		result = "The answer to life the universe and everything"
+		ans.style.cssText = 'width: 800px;';
 	}
 	console.log(sum);
 	sum = [];
 	console.log(sum);
 	count = 1;
+	ans.value = result;
 	sum.push(ans.value);
 }

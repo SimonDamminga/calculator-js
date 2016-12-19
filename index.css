@@ -88,3 +88,17 @@ main{
 #reset{
 	background-color: #960000;
 }
+@keyframes text-color{
+	0% {color: white;}
+	10% {color: black;}
+	20% {color: dark-blue;}
+	30% {color: blue;}
+	40% {color: purple;}
+	50% {color: blue;}
+	60% {color: dark-blue}
+	70% {color: black;}
+	80% {color: white;}
+	90% {color: white;}
+	100% {color: white;}
+
+}
