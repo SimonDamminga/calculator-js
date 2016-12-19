@@ -30,8 +30,11 @@ main{
 	font-size: 30px;
 	font-weight: bold;
 	border: none;
+	transition: .2s;
 }
 .button:hover{
+	background-color: #0c0956;
+	border-radius: 30%;
 	cursor: pointer;
 }
 #awnser{
