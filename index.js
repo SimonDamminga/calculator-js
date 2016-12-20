@@ -1,4 +1,5 @@
 var sum = [];
+var hist = [];
 var count = 0;
 var box = document.getElementById('display-text');
 var ans = document.getElementById('answer-text');
@@ -49,16 +50,13 @@ function answer(){
 		result = num1/num2;
 	}if (result == 0.30000000000000004){
 		result = result.toFixed(1);
-	}else if (result == 9){
-		result = "nein";
-	}else if (result == 42){
-		result = "The answer to life the universe and everything"
-		ans.style.cssText = 'width: 800px;';
 	}
+	hist.push(sum);
 	console.log(sum);
 	sum = [];
 	console.log(sum);
 	count = 1;
 	ans.value = result;
 	sum.push(ans.value);
+	box.value = "";
 }
