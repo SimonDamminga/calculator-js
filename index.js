@@ -16,11 +16,8 @@ function input(x){
 	}else{
 		num += x;
 	}
-	console.log(sum);
 }
 function operator(o){
-	console.log(sum);
-
 	sum.push(num);
 	box.value += o;
 	count++;
@@ -35,7 +32,6 @@ function operator(o){
 	}
 }
 function answer(){
-	console.log(sum);
 	sum.push(num);
 	num = "";
 	var num1 = parseFloat(sum[0]);
@@ -52,9 +48,7 @@ function answer(){
 		result = result.toFixed(1);
 	}
 	hist.push(sum);
-	console.log(sum);
 	sum = [];
-	console.log(sum);
 	count = 1;
 	ans.value = result;
 	sum.push(ans.value);
