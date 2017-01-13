@@ -23,7 +23,6 @@ function operator(o){
 	count++;
 	sum.push(o);
 	num = "";
-	console.log(sum);
 	if(count == 2){
 		answer();	
 		sum.splice(1, 1, o);
