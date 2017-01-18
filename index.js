@@ -24,8 +24,11 @@ function operator(o){
 	sum.push(o);
 	num = "";
 	if(count == 2){
-		answer();	
+		console.log(sum);
+		answer();
+		console.log(sum);	
 		sum.splice(1, 1, o);
+		console.log(sum);
 		box.value = ans.value;
 		box.value += o;
 	}
